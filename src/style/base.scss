@@ -1,0 +1,123 @@
+
+html,body{ height: 100%; background: #fff;}
+* {
+  margin: 0;
+  padding: 0;
+}
+//浮动
+.fl{float: left;}
+.fr{float: right;}
+.fn{float: none;}
+.clearfix:after{content: "."; display: block; height: 0; clear: both; visibility: hidden}
+//文本对其
+.t-c{text-align: center;}
+.t-l{text-align: left;}
+.t-r{text-align: right;}
+.nowrap{white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.o-h{overflow: hidden;}
+.o-s{overflow: scroll;}
+.o-v{overflow: visible;}
+.in_blick{display: inline-block}
+/* 文本垂直居中 */
+.t-c-v{display: -webkit-inline-box; display: -ms-inline-flexbox; display: -webkit-inline-flex; display: inline-flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
+.click{cursor: pointer;}
+
+.flex-c{display: flex;justify-content:center;}
+.flex-sp-be{display: flex;justify-content:space-between}
+.flex-item—c{display: flex;align-items: center;}
+// 删除线
+.text-line{
+  text-decoration:line-through
+}
+
+// 字体加粗
+.f_w{
+  font-weight: bold;
+}
+
+//padding,margin 常用值
+$spacingMax: 50;
+@while $spacingMax > 0 {
+    .p#{$spacingMax} {
+        padding: 1px * $spacingMax ;
+    }
+    .m#{$spacingMax} {
+      margin: 1px * $spacingMax ;
+    }
+    $spacingMax: $spacingMax - 10;
+}
+$spacingMaxTwo: 120;
+@while $spacingMaxTwo > 0 {
+  .pl#{$spacingMaxTwo} {
+    padding-left: 1px * $spacingMaxTwo ;
+  }
+  .pt#{$spacingMaxTwo} {
+    padding-top: 1px * $spacingMaxTwo ;
+  }
+  .pr#{$spacingMaxTwo} {
+    padding-right: 1px * $spacingMaxTwo ;
+  }
+  .pb#{$spacingMaxTwo} {
+    padding-bottom: 1px * $spacingMaxTwo ;
+  }
+  .ml#{$spacingMaxTwo} {
+    margin-left: 1px * $spacingMaxTwo ;
+  }
+  .mt#{$spacingMaxTwo} {
+    margin-top: 1px * $spacingMaxTwo ;
+  }
+  .mr#{$spacingMaxTwo} {
+    margin-right: 1px * $spacingMaxTwo ;
+  }
+  .mb#{$spacingMaxTwo} {
+    margin-bottom: 1px * $spacingMaxTwo ;
+  }
+  $spacingMaxTwo: $spacingMaxTwo - 10;
+}
+
+//字体大小
+$fontMax: 120;
+@while $fontMax > 0 {
+    .f#{$fontMax} {
+        font-size: 1px * $fontMax ;
+    }
+    $fontMax: $fontMax - 2;
+}
+$widthHeightMax: 750;
+@while $widthHeightMax > 0 {
+    .w#{$widthHeightMax} {
+        width: 1px * $widthHeightMax ;
+    }
+    .h#{$widthHeightMax} {
+      height: 1px * $widthHeightMax ;
+  }
+    $widthHeightMax: $widthHeightMax - 10;
+}
+
+
+// 
+// 字体颜色
+.color1{
+  color:#ff9600
+}
+.color2{
+  color:#ee0a24;
+  font-weight: bold;
+}
+.color999{
+  color:#999
+}
+.color333{
+  color:#333
+}
+// 背景颜色
+.bg0{
+  background: #ffffff !important;
+}
+.bg1{
+  background: #f8f8f8;
+}
+// 字体颜色
+.bg2{
+  background:#ff9600
+}
